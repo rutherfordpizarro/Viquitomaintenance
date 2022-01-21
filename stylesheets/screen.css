@@ -106,7 +106,7 @@ body ::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   row-gap: .5rem;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 /* line 44, ../sass/screen.scss */
 .content .hero_text .bold {
