@@ -1,0 +1,126 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,700;1,200;1,900&display=swap');
+
+html,
+body {
+  overscroll-behavior: none;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.hero_image {
+height: auto;
+width: 100%;
+position: absolute;
+}
+
+.content {
+height: 100%;
+width: 100%;
+position: absolute;
+background: linear-gradient(180deg, rgba(8, 13, 31, 0) -26.93%, #080D1F 47.5%);
+display: flex;
+flex-direction: column;
+row-gap: 3rem;
+
+.hero_text {
+height: auto;
+width: auto;
+display: flex;
+flex-direction: column;
+row-gap: .5rem;
+margin-top: 20vh;
+
+.bold {
+  font-family: Kanit;
+  font-style: italic;
+  font-weight: 900;
+  font-size: calc((26px * 1) + ((26 * 1.5) - (26 * 1)) * ((100vw - 320px) / (926 - 320)));
+  letter-spacing: 0.35em;
+  line-height: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F9BB43;
+}
+
+.light {
+  font-family: Kanit;
+  font-style: italic;
+  font-weight: 200;
+  font-size: calc((15px * 1) + ((15 * 1.5) - (15 * 1)) * ((100vw - 320px) / (926 - 320)));
+  letter-spacing: 0.465em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #EFEFEF;
+}
+}
+
+.titles_subjects {
+height: auto;
+width: auto;
+display: flex;
+flex-direction: column;
+row-gap: 2rem;
+
+.t_s {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: .8rem;
+
+  .title {
+  font-family: Kanit;
+  font-weight: bold;
+  font-size: calc((12px * 1) + ((12 * 1.5) - (12 * 1)) * ((100vw - 320px) / (926 - 320)));
+  text-align: center;
+  letter-spacing: 0.26em;
+  color: #F9BB43;
+  }
+
+  .subjects {
+    font-family: Kanit;
+    font-weight: 200;
+    font-size: calc((12px * 1) + ((12 * 1.5) - (12 * 1)) * ((100vw - 320px) / (926 - 320)));
+    text-align: center;
+    letter-spacing: 0.135em;
+    color: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    row-gap: .4rem;
+  }
+}
+}
+}
+
+.contact_nav {
+height: auto;
+width: 100%;
+position: absolute;
+bottom: 10vh;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+column-gap: 3rem;
+
+a {
+  height: auto;
+  width: auto;
+
+  .button {
+    height: 40px;
+    width: auto;
+  }
+}
+}
